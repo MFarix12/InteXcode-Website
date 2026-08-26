@@ -213,6 +213,121 @@ if (contactForm) contactForm.addEventListener("submit", (event) => {
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
+/* SHARED CONTACT FOOTER */
+
+const footerMount = document.querySelector("[data-site-footer]");
+
+if (footerMount) {
+    const isHome = window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/");
+    const homeLink = isHome ? "#home" : "index.html#home";
+    const aboutLink = isHome ? "#about" : "about.html";
+    const servicesLink = isHome ? "#services" : "index.html#services";
+    const solutionsLink = isHome ? "solutions.html" : "solutions.html";
+    const visionLink = isHome ? "vision.html" : "vision.html";
+    const contactLink = isHome ? "#contact" : "index.html#contact";
+
+    footerMount.innerHTML = `
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-contact">
+                    <div class="footer-contact-copy">
+                        <span class="section-number">LET'S BUILD WHAT'S NEXT</span>
+                        <h2>Have a challenge<br><span>in mind?</span></h2>
+                        <p>Tell us where you want to go. We will bring the clarity, capability and care to help you get there.</p>
+                    </div>
+                    <a class="btn btn-primary footer-cta" href="${contactLink}">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="${homeLink}" class="logo">Inte<span>X</span>core</a>
+                        <p>Intelligence. Technology. Core.<br>Practical technology for meaningful progress.</p>
+                    </div>
+                    <div class="footer-contact-details">
+                        <div><small>EMAIL</small><a href="mailto:intexcoretechnology@gmail.com">intexcoretechnology@gmail.com</a></div>
+                        <div><small>PHONE</small><a href="tel:+60194248847">+60 19 424 8847</a></div>
+                        <div><small>LOCATION</small><span>Malaysia · Serving clients worldwide</span></div>
+                    </div>
+                    <div class="footer-links">
+                        <div><span>EXPLORE</span><a href="${aboutLink}">About</a><a href="${servicesLink}">Services</a><a href="${solutionsLink}">Solutions</a><a href="${visionLink}">Vision</a><a href="portfolio.html">Portfolio</a><a href="${contactLink}">Contact</a></div>
+                        <div><span>CONNECT</span><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div>
+                    </div>
+                </div>
+                <div class="footer-bottom"><span>© <span id="year"></span> InteXcore. All rights reserved.</span><span>Intelligence · Technology · Core</span></div>
+            </div>
+        </footer>`;
+    const footerYear = footerMount.querySelector("#year");
+    if (footerYear) footerYear.textContent = new Date().getFullYear();
+}
+
+/* ABOUT PAGE CERTIFICATE VIEWER */
+
+const certificateModal = document.getElementById("certificateModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDetail = document.getElementById("modalDetail");
+const modalClose = document.getElementById("modalClose");
+
+if (certificateModal && modalTitle && modalDetail && modalClose) {
+    const closeCertificate = () => certificateModal.classList.remove("open");
+
+    document.querySelectorAll(".certificate-card").forEach(card => {
+        card.addEventListener("click", () => {
+            modalTitle.textContent = card.dataset.certificate;
+            modalDetail.textContent = card.dataset.detail;
+            certificateModal.classList.add("open");
+        });
+    });
+
+    modalClose.addEventListener("click", closeCertificate);
+    certificateModal.addEventListener("click", event => {
+        if (event.target === certificateModal) closeCertificate();
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") closeCertificate();
+    });
+}
+
+/* PORTFOLIO PROJECT VIEWER */
+
+const projectModal = document.getElementById("projectModal");
+
+if (projectModal) {
+    const projectData = {
+        ops: { title: "Flowline Operations Hub", category: "OPERATIONS / 2025", overview: "A connected operations platform that gives teams one clear view of work, ownership and progress.", challenge: "Manual handoffs and disconnected spreadsheets made it difficult to see bottlenecks or act quickly.", solution: "InteXcore mapped the workflow, designed a role-based workspace and connected the existing business systems through secure APIs.", features: "Workflow tracking, approvals, alerts, dashboards", tech: "JavaScript, REST APIs, cloud hosting, CI/CD", role: "Discovery, UX, frontend, backend integration and quality assurance", outcome: "Shorter handoffs, clearer ownership and a more dependable daily operating rhythm.", year: "2025", duration: "8 months", images: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=85"] },
+        care: { title: "CareConnect Portal", category: "HEALTHCARE / 2024", overview: "A secure digital front door that makes service journeys simpler for customers and support teams.", challenge: "Customers needed a clearer way to find information, submit requests and understand what happened next.", solution: "We created an accessible self-service portal with guided journeys, secure authentication and a support team console.", features: "Self-service, secure accounts, case tracking, notifications", tech: "Responsive UI, APIs, cloud security, analytics", role: "Product strategy, interface design, engineering and testing", outcome: "A calmer customer experience and better visibility for service teams.", year: "2024", duration: "6 months", images: ["https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85"] },
+        insight: { title: "Signal Insights", category: "INTELLIGENCE / 2024", overview: "A practical data and AI layer that helps leaders turn scattered information into confident decisions.", challenge: "Important signals were spread across reports, making it hard to spot trends early.", solution: "InteXcore unified the data flow and shaped an explainable insight experience around the decisions that mattered most.", features: "Data pipelines, trend views, alerts, role-based insight", tech: "Data workflows, AI, analytics, cloud infrastructure", role: "Data strategy, solution architecture, product delivery and enablement", outcome: "Faster access to useful context and more consistent planning conversations.", year: "2024", duration: "7 months", images: ["https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85"] },
+        commerce: { title: "Northstar Commerce", category: "COMMERCE / 2023", overview: "A flexible commerce experience designed to make discovery, purchase and fulfilment feel effortless.", challenge: "The existing customer journey was difficult to navigate and could not adapt quickly to new offers.", solution: "We redesigned the experience around customer intent and built a modular platform for faster iteration.", features: "Product discovery, checkout, content management, reporting", tech: "Web development, APIs, responsive design, automation", role: "UX, product design, frontend engineering and delivery", outcome: "A clearer path to purchase and a stronger foundation for future growth.", year: "2023", duration: "9 months", images: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=85"] },
+        fleet: { title: "Fleetwise Control", category: "LOGISTICS / 2023", overview: "A live planning and control view that brings vehicles, teams and delivery priorities together.", challenge: "Planning depended on delayed updates and multiple tools that did not share the same picture.", solution: "We connected operational data into a focused control centre with clear status, ownership and exception handling.", features: "Live status, planning, exceptions, mobile access", tech: "Cloud services, APIs, dashboards, mobile-first UI", role: "Discovery, architecture, engineering, rollout support", outcome: "Quicker response to exceptions and a shared view across the operation.", year: "2023", duration: "10 months", images: ["https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=85"] },
+        foundation: { title: "CloudBase Modernisation", category: "CLOUD / 2022", overview: "A safer, more observable cloud foundation for a growing digital service.", challenge: "Legacy infrastructure limited release confidence and made system health difficult to understand.", solution: "We introduced a staged cloud architecture, deployment automation, access controls and meaningful monitoring.", features: "CI/CD, observability, backups, access management", tech: "Cloud architecture, containers, infrastructure as code, monitoring", role: "Assessment, cloud strategy, DevOps implementation and team coaching", outcome: "More predictable releases, clearer system health and a foundation ready to scale.", year: "2022", duration: "5 months", images: ["https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=85", "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85"] }
+    };
+    const image = document.getElementById("projectModalImage");
+    const dots = document.getElementById("projectDots");
+    let activeProject;
+    let activeImage = 0;
+    const setImage = index => {
+        activeImage = (index + activeProject.images.length) % activeProject.images.length;
+        image.src = activeProject.images[activeImage];
+        dots.querySelectorAll("button").forEach((dot, dotIndex) => dot.classList.toggle("active", dotIndex === activeImage));
+    };
+    document.querySelectorAll(".portfolio-card").forEach(card => card.addEventListener("click", () => {
+        activeProject = projectData[card.dataset.project];
+        ["Category", "Title", "Overview", "Challenge", "Solution", "Features", "Tech", "Role", "Outcome", "Year", "Duration"].forEach(name => {
+            const field = document.getElementById(`projectModal${name}`);
+            if (field) field.textContent = activeProject[name.toLowerCase()];
+        });
+        dots.innerHTML = activeProject.images.map((_, index) => `<button type="button" aria-label="View project image ${index + 1}"></button>`).join("");
+        dots.querySelectorAll("button").forEach((dot, index) => dot.addEventListener("click", () => setImage(index)));
+        setImage(0);
+        projectModal.classList.add("open");
+        document.body.classList.add("modal-open");
+    }));
+    const closeProject = () => { projectModal.classList.remove("open"); document.body.classList.remove("modal-open"); };
+    document.getElementById("projectModalClose").addEventListener("click", closeProject);
+    document.getElementById("projectPrevious").addEventListener("click", () => setImage(activeImage - 1));
+    document.getElementById("projectNext").addEventListener("click", () => setImage(activeImage + 1));
+    projectModal.addEventListener("click", event => { if (event.target === projectModal) closeProject(); });
+    document.addEventListener("keydown", event => { if (event.key === "Escape") closeProject(); if (projectModal.classList.contains("open") && event.key === "ArrowLeft") setImage(activeImage - 1); if (projectModal.classList.contains("open") && event.key === "ArrowRight") setImage(activeImage + 1); });
+}
+
 
 /* =========================================================
    HERO PARALLAX EFFECT
