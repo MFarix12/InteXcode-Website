@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InteXcore technology services for ambitious businesses.">
+    <title>InteXcore Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-page">
+    <header class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html#home" class="logo">Inte<span>X</span>core</a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">Services <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                    <div class="services-dropdown" aria-label="Services submenu">
+                        <a href="service.html?service=web-development"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Web Development</span></a>
+                        <a href="service.html?service=mobile-application-development"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><span>Mobile Application Development</span></a>
+                        <a href="service.html?service=cloud-devops-solutions"><i class="fa-solid fa-cloud" aria-hidden="true"></i><span>Cloud &amp; DevOps Solutions</span></a>
+                        <a href="service.html?service=it-consulting-strategy"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i><span>IT Consulting &amp; Strategy</span></a>
+                        <a href="service.html?service=software-testing-quality-assurance"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Software Testing &amp; Quality Assurance</span></a>
+                        <a href="service.html?service=artificial-intelligence"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>Artificial Intelligence</span></a>
+                    </div>
+                </div>
+                <a href="index.html#solutions" class="nav-link">Solutions</a>
+                <a href="index.html#vision" class="nav-link">Vision</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="index.html#contact" class="nav-button">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="hero-grid"></div>
+            <div class="container service-hero-content reveal">
+                <span class="eyebrow"><span></span><strong id="serviceNumber">01 / SERVICES</strong></span>
+                <h1 id="serviceTitle">Technology services with <span>purpose.</span></h1>
+                <p id="serviceOverview"></p>
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-detail-grid">
+                    <div class="service-detail-intro reveal">
+                        <span class="section-number">THE IN TEXCORE APPROACH</span>
+                        <h2>Built around your <span>business.</span></h2>
+                        <p id="serviceHelp"></p>
+                        <span class="section-number service-benefit-label">CUSTOMER BENEFITS</span>
+                        <p id="serviceBenefits"></p>
+                    </div>
+                    <div class="service-detail-list" id="serviceCapabilities"></div>
+                </div>
+                <div class="service-tech reveal">
+                    <span class="section-number">TOOLS &amp; SOLUTIONS</span>
+                    <h2>Technology that moves work forward.</h2>
+                    <div class="tech-tags" id="serviceTechnologies"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-cta">
+            <div class="container service-cta-content reveal">
+                <h2>Ready to make your next move?</h2>
+                <a href="index.html#contact" class="btn btn-dark">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
