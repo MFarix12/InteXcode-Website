@@ -1,82 +1,559 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet InteXcode: our identity, standards, people, technology and trusted partners.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet InteXcode: our identity, standards, people, technology and trusted partners."
+    />
     <title>About InteXcode | Intelligence. Technology. Code.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="about-page">
-<header class="navbar scrolled" id="navbar">
-    <div class="container nav-container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="about-page">
+    <header class="navbar scrolled" id="navbar">
+      <div class="container nav-container">
         <a href="index.html#home" class="logo">Inte<span>X</span>code</a>
         <nav class="nav-menu" id="navMenu">
-            <a href="index.html#home" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link active">About</a>
-            <div class="nav-dropdown">
-                <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">Services <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
-                <div class="services-dropdown" aria-label="Services submenu">
-                    <a href="service.html?service=web-development"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Web Development</span></a>
-                    <a href="service.html?service=mobile-application-development"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><span>Mobile Application Development</span></a>
-                    <a href="service.html?service=cloud-devops-solutions"><i class="fa-solid fa-cloud" aria-hidden="true"></i><span>Cloud &amp; DevOps Solutions</span></a>
-                    <a href="service.html?service=it-consulting-strategy"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i><span>IT Consulting &amp; Strategy</span></a>
-                    <a href="service.html?service=software-testing-quality-assurance"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Software Testing &amp; Quality Assurance</span></a>
-                    <a href="service.html?service=artificial-intelligence"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>Artificial Intelligence</span></a>
-                </div>
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <div class="nav-dropdown">
+            <button
+              class="nav-link nav-dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+            >
+              Services
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="services-dropdown" aria-label="Services submenu">
+              <a href="service.html?service=web-development"
+                ><i class="fa-solid fa-laptop-code" aria-hidden="true"></i
+                ><span>Web Development</span></a
+              >
+              <a href="service.html?service=mobile-application-development"
+                ><i
+                  class="fa-solid fa-mobile-screen-button"
+                  aria-hidden="true"
+                ></i
+                ><span>Mobile Application Development</span></a
+              >
+              <a href="service.html?service=cloud-devops-solutions"
+                ><i class="fa-solid fa-cloud" aria-hidden="true"></i
+                ><span>Cloud &amp; DevOps Solutions</span></a
+              >
+              <a href="service.html?service=it-consulting-strategy"
+                ><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i
+                ><span>IT Consulting &amp; Strategy</span></a
+              >
+              <a href="service.html?service=software-testing-quality-assurance"
+                ><i class="fa-solid fa-shield-halved" aria-hidden="true"></i
+                ><span>Software Testing &amp; Quality Assurance</span></a
+              >
+              <a href="service.html?service=artificial-intelligence"
+                ><i class="fa-solid fa-brain" aria-hidden="true"></i
+                ><span>Artificial Intelligence</span></a
+              >
             </div>
-            <a href="solutions.html" class="nav-link">Solutions</a>
-            <a href="vision.html" class="nav-link">Vision</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+          <a href="solutions.html" class="nav-link">Solutions</a>
+          <a href="vision.html" class="nav-link">Vision</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
         </nav>
-        <a href="index.html#contact" class="nav-button">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
-    </div>
-</header>
+        <a href="index.html#contact" class="nav-button"
+          >Let's Talk <i class="fa-solid fa-arrow-right"></i
+        ></a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
-<main>
-    <section class="about-hero">
+    <main>
+      <section class="about-hero">
         <div class="hero-grid"></div>
         <div class="container about-hero-content reveal">
-            <span class="eyebrow"><span></span>THE PEOPLE BEHIND THE PROGRESS</span>
-            <h1>More than technology.<br><strong>We are the code.</strong></h1>
-            <p>InteXcode brings intelligence, technology and dependable engineering together to help ambitious organisations do their best work.</p>
-            <a href="#identity" class="btn btn-primary">Explore our story <i class="fa-solid fa-arrow-down"></i></a>
+          <span class="eyebrow"
+            ><span></span>THE PEOPLE BEHIND THE PROGRESS</span
+          >
+          <h1>More than technology.<br /><strong>We are the code.</strong></h1>
+          <p>
+            InteXcode brings intelligence, technology and dependable engineering
+            together to help ambitious organisations do their best work.
+          </p>
+          <a href="#identity" class="btn btn-primary"
+            >Explore our story <i class="fa-solid fa-arrow-down"></i
+          ></a>
         </div>
         <div class="about-hero-mark">IX<span> / 01</span></div>
-    </section>
+      </section>
 
-    <section class="section identity" id="identity">
+      <section class="section identity" id="identity">
         <div class="container">
-            <div class="section-header reveal"><div><span class="section-number">01 / OUR IDENTITY</span><h2>Built for the<br><span>meaningful.</span></h2></div><p>We are a multidisciplinary technology company with the curiosity to ask better questions and the discipline to make the answers real.</p></div>
-            <div class="identity-grid">
-                <div class="identity-copy reveal"><p class="large-text">InteXcode was formed by professionals with diverse expertise across software engineering, business, finance, design, quality assurance and customer experience.</p><p>Our name captures the way we work: <strong>Intelligence</strong> gives us insight, <strong>Technology</strong> gives us leverage, and the <strong>Code</strong> is the dependable foundation underneath it all.</p></div>
-                <div class="identity-words reveal"><div><strong>IN</strong><span>Intelligence</span><p>We see the signal inside complexity.</p></div><div><strong>TE</strong><span>Technology</span><p>We turn possibilities into useful systems.</p></div><div><strong>CODE</strong><span>Code</span><p>We build foundations made to last.</p></div></div>
+          <div class="section-header reveal">
+            <div>
+              <span class="section-number">01 / OUR IDENTITY</span>
+              <h2>Built for the<br /><span>meaningful.</span></h2>
             </div>
-            <div class="identity-pillars"><article class="pillar reveal"><i class="fa-solid fa-compass"></i><h3>Mission</h3><p>Make technology clearer, more useful and more human for every organisation we serve.</p></article><article class="pillar pillar-dark reveal"><i class="fa-solid fa-eye"></i><h3>Vision</h3><p>A future where every business can use intelligent technology to move with confidence.</p></article><article class="pillar reveal"><i class="fa-solid fa-handshake"></i><h3>Values</h3><p>Curiosity, ownership, honesty and care in every decision, delivery and relationship.</p></article></div>
+            <p>
+              We are a multidisciplinary technology company with the curiosity
+              to ask better questions and the discipline to make the answers
+              real.
+            </p>
+          </div>
+          <div class="identity-grid">
+            <div class="identity-copy reveal">
+              <p class="large-text">
+                InteXcode was formed by professionals with diverse expertise
+                across software engineering, business, finance, design, quality
+                assurance and customer experience.
+              </p>
+              <p>
+                Our name captures the way we work:
+                <strong>Intelligence</strong> gives us insight,
+                <strong>Technology</strong> gives us leverage, and the
+                <strong>Code</strong> is the dependable foundation underneath it
+                all.
+              </p>
+            </div>
+            <div class="identity-words reveal">
+              <div>
+                <strong>IN</strong><span>Intelligence</span>
+                <p>We see the signal inside complexity.</p>
+              </div>
+              <div>
+                <strong>TE</strong><span>Technology</span>
+                <p>We turn possibilities into useful systems.</p>
+              </div>
+              <div>
+                <strong>CODE</strong><span>Code</span>
+                <p>We build foundations made to last.</p>
+              </div>
+            </div>
+          </div>
+          <div class="identity-pillars">
+            <article class="pillar reveal">
+              <i class="fa-solid fa-compass"></i>
+              <h3>Mission</h3>
+              <p>
+                Make technology clearer, more useful and more human for every
+                organisation we serve.
+              </p>
+            </article>
+            <article class="pillar pillar-dark reveal">
+              <i class="fa-solid fa-eye"></i>
+              <h3>Vision</h3>
+              <p>
+                A future where every business can use intelligent technology to
+                move with confidence.
+              </p>
+            </article>
+            <article class="pillar reveal">
+              <i class="fa-solid fa-handshake"></i>
+              <h3>Values</h3>
+              <p>
+                Curiosity, ownership, honesty and care in every decision,
+                delivery and relationship.
+              </p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="about-band" id="quality"><div class="container quality-grid"><div class="reveal"><span class="section-number">02 / OUR QUALITY POLICY</span><h2>Trust is<br><span>engineered.</span></h2></div><div class="quality-copy reveal"><p>We commit to delivering reliable, secure and valuable solutions that meet agreed requirements and create measurable customer outcomes.</p><div class="quality-list"><div><i class="fa-solid fa-shield-halved"></i><span><strong>Reliability</strong>Systems that perform consistently when they matter.</span></div><div><i class="fa-solid fa-lock"></i><span><strong>Security</strong>Responsible protection of data, access and trust.</span></div><div><i class="fa-solid fa-arrows-rotate"></i><span><strong>Improvement</strong>Feedback and learning built into the way we work.</span></div></div></div></div></section>
+      <section class="about-band" id="quality">
+        <div class="container quality-grid">
+          <div class="reveal">
+            <span class="section-number">02 / OUR QUALITY POLICY</span>
+            <h2>Trust is<br /><span>engineered.</span></h2>
+          </div>
+          <div class="quality-copy reveal">
+            <p>
+              We commit to delivering reliable, secure and valuable solutions
+              that meet agreed requirements and create measurable customer
+              outcomes.
+            </p>
+            <div class="quality-list">
+              <div>
+                <i class="fa-solid fa-shield-halved"></i
+                ><span
+                  ><strong>Reliability</strong>Systems that perform consistently
+                  when they matter.</span
+                >
+              </div>
+              <div>
+                <i class="fa-solid fa-lock"></i
+                ><span
+                  ><strong>Security</strong>Responsible protection of data,
+                  access and trust.</span
+                >
+              </div>
+              <div>
+                <i class="fa-solid fa-arrows-rotate"></i
+                ><span
+                  ><strong>Improvement</strong>Feedback and learning built into
+                  the way we work.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section certificates" id="certificates"><div class="container"><div class="section-header reveal"><div><span class="section-number">03 / CERTIFICATES</span><h2>Proof behind<br><span>the promise.</span></h2></div><p>Our standards are visible in the practices, achievements and credentials that guide our work.</p></div><div class="certificate-grid"><button class="certificate-card reveal" data-certificate="ISO 9001:2015" data-detail="Quality Management System"><div class="certificate-image certificate-iso"><i class="fa-solid fa-award"></i><span>ISO<br><strong>9001</strong></span></div><span class="certificate-label">QUALITY STANDARD</span><h3>ISO 9001:2015</h3><p>Quality Management System</p><i class="fa-solid fa-expand certificate-expand" aria-hidden="true"></i></button><button class="certificate-card reveal" data-certificate="ISO 27001" data-detail="Information Security Management"><div class="certificate-image certificate-security"><i class="fa-solid fa-lock"></i><span>ISO<br><strong>27001</strong></span></div><span class="certificate-label">SECURITY STANDARD</span><h3>ISO 27001</h3><p>Information Security Management</p><i class="fa-solid fa-expand certificate-expand" aria-hidden="true"></i></button><button class="certificate-card reveal" data-certificate="Technology Achievement" data-detail="Innovation and delivery excellence"><div class="certificate-image certificate-achievement"><i class="fa-solid fa-trophy"></i><span>TECH<br><strong>ACHIEVEMENT</strong></span></div><span class="certificate-label">RECOGNITION</span><h3>Technology Achievement</h3><p>Innovation and delivery excellence</p><i class="fa-solid fa-expand certificate-expand" aria-hidden="true"></i></button></div></div></section>
+      <section class="section certificates" id="certificates">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="section-number">03 / CERTIFICATES</span>
+              <h2>Proof behind<br /><span>the promise.</span></h2>
+            </div>
+            <p>
+              Our standards are visible in the practices, achievements and
+              credentials that guide our work.
+            </p>
+          </div>
+          <div class="certificate-grid">
+            <button
+              class="certificate-card reveal"
+              data-certificate="ISO 9001:2015"
+              data-detail="Quality Management System"
+            >
+              <div class="certificate-image certificate-iso">
+                <i class="fa-solid fa-award"></i
+                ><span>ISO<br /><strong>9001</strong></span>
+              </div>
+              <span class="certificate-label">QUALITY STANDARD</span>
+              <h3>ISO 9001:2015</h3>
+              <p>Quality Management System</p>
+              <i
+                class="fa-solid fa-expand certificate-expand"
+                aria-hidden="true"
+              ></i></button
+            ><button
+              class="certificate-card reveal"
+              data-certificate="ISO 27001"
+              data-detail="Information Security Management"
+            >
+              <div class="certificate-image certificate-security">
+                <i class="fa-solid fa-lock"></i
+                ><span>ISO<br /><strong>27001</strong></span>
+              </div>
+              <span class="certificate-label">SECURITY STANDARD</span>
+              <h3>ISO 27001</h3>
+              <p>Information Security Management</p>
+              <i
+                class="fa-solid fa-expand certificate-expand"
+                aria-hidden="true"
+              ></i></button
+            ><button
+              class="certificate-card reveal"
+              data-certificate="Technology Achievement"
+              data-detail="Innovation and delivery excellence"
+            >
+              <div class="certificate-image certificate-achievement">
+                <i class="fa-solid fa-trophy"></i
+                ><span>TECH<br /><strong>ACHIEVEMENT</strong></span>
+              </div>
+              <span class="certificate-label">RECOGNITION</span>
+              <h3>Technology Achievement</h3>
+              <p>Innovation and delivery excellence</p>
+              <i
+                class="fa-solid fa-expand certificate-expand"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
 
-    <section class="breakthrough" id="technology"><div class="container breakthrough-grid"><div class="reveal"><span class="section-number">04 / TECHNOLOGY BREAKTHROUGH</span><h2>We make the<br><span>complex useful.</span></h2><p>From first idea to lasting platform, our teams combine emerging technology with practical delivery.</p></div><div class="tech-matrix reveal"><div class="tech-cell"><i class="fa-solid fa-brain"></i><strong>AI &amp; DATA</strong><span>Insight that moves decisions.</span></div><div class="tech-cell"><i class="fa-solid fa-cloud"></i><strong>CLOUD</strong><span>Scale without the drag.</span></div><div class="tech-cell"><i class="fa-solid fa-gears"></i><strong>AUTOMATION</strong><span>More time for valuable work.</span></div><div class="tech-cell"><i class="fa-solid fa-code"></i><strong>SOFTWARE</strong><span>Products people depend on.</span></div><div class="tech-cell"><i class="fa-solid fa-code-branch"></i><strong>DEVOPS</strong><span>Ship with confidence.</span></div><div class="tech-cell"><i class="fa-solid fa-microchip"></i><strong>EMERGING TECH</strong><span>Ready for what is next.</span></div></div></div></section>
+      <section class="breakthrough" id="technology">
+        <div class="container breakthrough-grid">
+          <div class="reveal">
+            <span class="section-number">04 / TECHNOLOGY BREAKTHROUGH</span>
+            <h2>We make the<br /><span>complex useful.</span></h2>
+            <p>
+              From first idea to lasting platform, our teams combine emerging
+              technology with practical delivery.
+            </p>
+          </div>
+          <div class="tech-matrix reveal">
+            <div class="tech-cell">
+              <i class="fa-solid fa-brain"></i><strong>AI &amp; DATA</strong
+              ><span>Insight that moves decisions.</span>
+            </div>
+            <div class="tech-cell">
+              <i class="fa-solid fa-cloud"></i><strong>CLOUD</strong
+              ><span>Scale without the drag.</span>
+            </div>
+            <div class="tech-cell">
+              <i class="fa-solid fa-gears"></i><strong>AUTOMATION</strong
+              ><span>More time for valuable work.</span>
+            </div>
+            <div class="tech-cell">
+              <i class="fa-solid fa-code"></i><strong>SOFTWARE</strong
+              ><span>Products people depend on.</span>
+            </div>
+            <div class="tech-cell">
+              <i class="fa-solid fa-code-branch"></i><strong>DEVOPS</strong
+              ><span>Ship with confidence.</span>
+            </div>
+            <div class="tech-cell">
+              <i class="fa-solid fa-microchip"></i><strong>EMERGING TECH</strong
+              ><span>Ready for what is next.</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section leadership" id="leadership"><div class="container"><div class="section-header reveal"><div><span class="section-number">05 / OUR LEADERSHIP</span><h2>Different minds.<br><span>One direction.</span></h2></div><p>A leadership team that stays close to the work, the customer and the outcome.</p></div><div class="people-grid"><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of Alex Morgan"><div><h3>Alex Morgan</h3><span>Chief Executive Officer</span><p>Connects business ambition with practical technology strategy.</p><small>Strategy · Growth</small></div></article><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of Sarah Okafor"><div><h3>Sarah Okafor</h3><span>Chief Technology Officer</span><p>Leads architecture and engineering for resilient digital products.</p><small>Architecture · Cloud</small></div></article><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of Daniel Kim"><div><h3>Daniel Kim</h3><span>VP, Product &amp; Design</span><p>Turns complex customer journeys into clear product experiences.</p><small>UX · Product</small></div></article><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of Maya Patel"><div><h3>Maya Patel</h3><span>Director of Quality</span><p>Builds quality practices that protect trust at every release.</p><small>QA · Governance</small></div></article><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of James Walker"><div><h3>James Walker</h3><span>Head of Delivery</span><p>Creates focused teams and steady momentum from brief to launch.</p><small>Delivery · Operations</small></div></article><article class="person-card reveal"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portrait of Lina Hassan"><div><h3>Lina Hassan</h3><span>Client Partnerships Lead</span><p>Builds lasting partnerships around shared outcomes and care.</p><small>Partnerships · Support</small></div></article></div></div></section>
+      <section class="section leadership" id="leadership">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="section-number">05 / OUR LEADERSHIP</span>
+              <h2>Different minds.<br /><span>One direction.</span></h2>
+            </div>
+            <p>
+              A leadership team that stays close to the work, the customer and
+              the outcome.
+            </p>
+          </div>
+          <div class="people-grid">
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of Alex Morgan"
+              />
+              <div>
+                <h3>Alex Morgan</h3>
+                <span>Chief Executive Officer</span>
+                <p>
+                  Connects business ambition with practical technology strategy.
+                </p>
+                <small>Strategy · Growth</small>
+              </div>
+            </article>
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of Sarah Okafor"
+              />
+              <div>
+                <h3>Sarah Okafor</h3>
+                <span>Chief Technology Officer</span>
+                <p>
+                  Leads architecture and engineering for resilient digital
+                  products.
+                </p>
+                <small>Architecture · Cloud</small>
+              </div>
+            </article>
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of Daniel Kim"
+              />
+              <div>
+                <h3>Daniel Kim</h3>
+                <span>VP, Product &amp; Design</span>
+                <p>
+                  Turns complex customer journeys into clear product
+                  experiences.
+                </p>
+                <small>UX · Product</small>
+              </div>
+            </article>
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of Maya Patel"
+              />
+              <div>
+                <h3>Maya Patel</h3>
+                <span>Director of Quality</span>
+                <p>
+                  Builds quality practices that protect trust at every release.
+                </p>
+                <small>QA · Governance</small>
+              </div>
+            </article>
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of James Walker"
+              />
+              <div>
+                <h3>James Walker</h3>
+                <span>Head of Delivery</span>
+                <p>
+                  Creates focused teams and steady momentum from brief to
+                  launch.
+                </p>
+                <small>Delivery · Operations</small>
+              </div>
+            </article>
+            <article class="person-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                alt="Portrait of Lina Hassan"
+              />
+              <div>
+                <h3>Lina Hassan</h3>
+                <span>Client Partnerships Lead</span>
+                <p>
+                  Builds lasting partnerships around shared outcomes and care.
+                </p>
+                <small>Partnerships · Support</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section class="section professional-certs" id="professional-certifications"><div class="container"><div class="section-header reveal"><div><span class="section-number">06 / PROFESSIONAL CERTIFICATIONS</span><h2>Capability you<br>can <span>count on.</span></h2></div><p>Our people keep learning so your work benefits from current thinking and proven practice.</p></div><div class="professional-grid"><div class="pro-cert reveal"><div class="pro-mark">PMP</div><div><h3>Project Management Professional</h3><p>Alex Morgan · PMI</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="pro-cert reveal"><div class="pro-mark">AWS</div><div><h3>Solutions Architect</h3><p>Sarah Okafor · Amazon Web Services</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="pro-cert reveal"><div class="pro-mark">ISTQB</div><div><h3>Advanced Test Manager</h3><p>Maya Patel · ISTQB</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="pro-cert reveal"><div class="pro-mark">UX</div><div><h3>Human-Centred Design</h3><p>Daniel Kim · Interaction Design Foundation</p></div><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div></div></section>
+      <section
+        class="section professional-certs"
+        id="professional-certifications"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="section-number"
+                >06 / PROFESSIONAL CERTIFICATIONS</span
+              >
+              <h2>Capability you<br />can <span>count on.</span></h2>
+            </div>
+            <p>
+              Our people keep learning so your work benefits from current
+              thinking and proven practice.
+            </p>
+          </div>
+          <div class="professional-grid">
+            <div class="pro-cert reveal">
+              <div class="pro-mark">PMP</div>
+              <div>
+                <h3>Project Management Professional</h3>
+                <p>Alex Morgan · PMI</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="pro-cert reveal">
+              <div class="pro-mark">AWS</div>
+              <div>
+                <h3>Solutions Architect</h3>
+                <p>Sarah Okafor · Amazon Web Services</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="pro-cert reveal">
+              <div class="pro-mark">ISTQB</div>
+              <div>
+                <h3>Advanced Test Manager</h3>
+                <p>Maya Patel · ISTQB</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="pro-cert reveal">
+              <div class="pro-mark">UX</div>
+              <div>
+                <h3>Human-Centred Design</h3>
+                <p>Daniel Kim · Interaction Design Foundation</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="partners" id="partners"><div class="container"><div class="section-header reveal"><div><span class="section-number">07 / PARTNERS</span><h2>Better together<br><span>by design.</span></h2></div><p>We work across a trusted ecosystem of software and hardware partners to deliver complete solutions.</p></div><div class="partner-groups"><div class="partner-group reveal"><span class="partner-category">SOFTWARE PARTNERS</span><div class="partner-row"><div><strong>Microsoft</strong><p>Cloud, productivity and business platforms.</p></div><div><strong>AWS</strong><p>Flexible, scalable cloud infrastructure.</p></div><div><strong>GitHub</strong><p>Collaborative software development.</p></div></div></div><div class="partner-group reveal"><span class="partner-category">HARDWARE PARTNERS</span><div class="partner-row"><div><strong>Dell Technologies</strong><p>Reliable enterprise computing.</p></div><div><strong>Lenovo</strong><p>Intelligent devices for modern teams.</p></div><div><strong>HPE</strong><p>Secure edge and data centre solutions.</p></div></div></div></div></div></section>
-</main>
+      <section class="partners" id="partners">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="section-number">07 / PARTNERS</span>
+              <h2>Better together<br /><span>by design.</span></h2>
+            </div>
+            <p>
+              We work across a trusted ecosystem of software and hardware
+              partners to deliver complete solutions.
+            </p>
+          </div>
+          <div class="partner-groups">
+            <div class="partner-group reveal">
+              <span class="partner-category">SOFTWARE PARTNERS</span>
+              <div class="partner-row">
+                <div>
+                  <strong>Microsoft</strong>
+                  <p>Cloud, productivity and business platforms.</p>
+                </div>
+                <div>
+                  <strong>AWS</strong>
+                  <p>Flexible, scalable cloud infrastructure.</p>
+                </div>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>Collaborative software development.</p>
+                </div>
+              </div>
+            </div>
+            <div class="partner-group reveal">
+              <span class="partner-category">HARDWARE PARTNERS</span>
+              <div class="partner-row">
+                <div>
+                  <strong>Dell Technologies</strong>
+                  <p>Reliable enterprise computing.</p>
+                </div>
+                <div>
+                  <strong>Lenovo</strong>
+                  <p>Intelligent devices for modern teams.</p>
+                </div>
+                <div>
+                  <strong>HPE</strong>
+                  <p>Secure edge and data centre solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<div data-site-footer></div>
-<div class="certificate-modal" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-inner"><button class="modal-close" id="modalClose" aria-label="Close certificate"><i class="fa-solid fa-xmark"></i></button><div class="modal-certificate"><i class="fa-solid fa-certificate"></i><span id="modalBadge">CERTIFIED</span></div><span class="section-number">CERTIFICATE DETAIL</span><h2 id="modalTitle">Certificate</h2><p id="modalDetail">Issued in recognition of professional standards.</p></div></div>
-<script src="script.js"></script>
-</body>
+    <div data-site-footer></div>
+    <div
+      class="certificate-modal"
+      id="certificateModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-inner">
+        <button
+          class="modal-close"
+          id="modalClose"
+          aria-label="Close certificate"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-certificate">
+          <i class="fa-solid fa-certificate"></i
+          ><span id="modalBadge">CERTIFIED</span>
+        </div>
+        <span class="section-number">CERTIFICATE DETAIL</span>
+        <h2 id="modalTitle">Certificate</h2>
+        <p id="modalDetail">Issued in recognition of professional standards.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
