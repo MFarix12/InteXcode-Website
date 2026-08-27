@@ -247,17 +247,68 @@ const projectModal = document.getElementById("projectModal");
 
 if (projectModal) {
   const projectData = {
-    1: {
+    ecopilot: {
+      title: "EcoPilot",
+      category: "SUSTAINABILITY / 2026",
+      overview:
+        "A mobile application that encourages environmentally responsible purchasing by helping shoppers scan products, understand their eco-score and make more sustainable choices.",
+      objective:
+        "Identify sustainable consumer behaviour, reduce waste at the point of purchase and test the functionality of the EcoPilot mobile application.",
+      challenge:
+        "Increased awareness does not always lead to better behaviour. Intentions can fail to become action without timely reminders, personalised suggestions and clear product guidance.",
+      solution:
+        "EcoPilot turns product scanning into practical guidance with eco-scores, disposal instructions, better alternatives and incentives for responsible purchasing.",
+      features:
+        "Product scanning, eco-score feedback, disposal guidance, better alternatives, personalised nudges and coupon redemption",
+      tech: "Mobile application, barcode/product scanning, eco-score logic, cloud services",
+      tools:
+        "Firebase, Node.js, Cloudinary, GitHub, incremental prototyping and black-box testing",
+      role:
+        "FYP research, product design, mobile application development, prototyping and functional testing",
+      outcome:
+        "User acceptance testing achieved a 100% pass rate across 118 test cases, supporting more responsible consumption and waste reduction.",
+      year: "2026",
+      duration: "FYP project",
+      poster: true,
+      images: ["images/ecopilot-poster.png"],
+    },
+    eduClear: {
+      title: "EduClear",
+      category: "EDUCATION / 2026",
+      overview:
+        "A web-based academic clearance management system developed to replace slow, labour-intensive manual clearance processes with a more efficient and transparent digital workflow.",
+      objective:
+        "Identify the requirements for an undergraduate academic clearance process, develop a web-based information management system for clearance and auditing, and test its functionality.",
+      challenge:
+        "Manual clearance processes delayed result processing and created non-compliance risks as student numbers and programme complexity grew. Late detection of non-compliance could lead to low on-time graduation rates.",
+      solution:
+        "EduClear centralises academic clearance requirements, automates the clearance process and provides reporting and interactive dashboards for clearer auditing and decision-making.",
+      features:
+        "Automated clearance engine, clearance report generation, interactive dashboards, clearance auditing and student eligibility monitoring",
+      tech: "Web application, academic information management, database workflows, dashboard visualisation",
+      tools: "Visual Studio Code, MySQL, GitHub and PDF reporting",
+      role:
+        "FYP research, requirements analysis, system design, web development, dashboard implementation and testing",
+      outcome:
+        "User acceptance testing achieved a 100% pass rate across 60 test cases, supporting faster clearance processing and more accurate graduation decisions.",
+      year: "2025",
+      duration: "FYP project",
+      poster: true,
+      images: ["images/educlear-poster.png"],
+    },
+    ops: {
       title: "Flowline Operations Hub",
       category: "OPERATIONS / 2025",
       overview:
         "A connected operations platform that gives teams one clear view of work, ownership and progress.",
+      objective: "Create one dependable operating view for teams managing fast-moving work.",
       challenge:
         "Manual handoffs and disconnected spreadsheets made it difficult to see bottlenecks or act quickly.",
       solution:
         "InteXcode mapped the workflow, designed a role-based workspace and connected the existing business systems through secure APIs.",
       features: "Workflow tracking, approvals, alerts, dashboards",
       tech: "JavaScript, REST APIs, cloud hosting, CI/CD",
+      tools: "Figma, GitHub, Postman, project analytics",
       role: "Discovery, UX, frontend, backend integration and quality assurance",
       outcome:
         "Shorter handoffs, clearer ownership and a more dependable daily operating rhythm.",
@@ -268,17 +319,19 @@ if (projectModal) {
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=85",
       ],
     },
-    2: {
+    care: {
       title: "CareConnect Portal",
       category: "HEALTHCARE / 2024",
       overview:
         "A secure digital front door that makes service journeys simpler for customers and support teams.",
+      objective: "Make essential healthcare service journeys easier to start, follow and complete.",
       challenge:
         "Customers needed a clearer way to find information, submit requests and understand what happened next.",
       solution:
         "We created an accessible self-service portal with guided journeys, secure authentication and a support team console.",
       features: "Self-service, secure accounts, case tracking, notifications",
       tech: "Responsive UI, APIs, cloud security, analytics",
+      tools: "Figma, GitHub, automated testing, accessibility audits",
       role: "Product strategy, interface design, engineering and testing",
       outcome:
         "A calmer customer experience and better visibility for service teams.",
@@ -289,17 +342,19 @@ if (projectModal) {
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85",
       ],
     },
-    3: {
+    insight: {
       title: "Signal Insights",
       category: "INTELLIGENCE / 2024",
       overview:
         "A practical data and AI layer that helps leaders turn scattered information into confident decisions.",
+      objective: "Give decision-makers timely, understandable signals they can act on.",
       challenge:
         "Important signals were spread across reports, making it hard to spot trends early.",
       solution:
         "InteXcode unified the data flow and shaped an explainable insight experience around the decisions that mattered most.",
       features: "Data pipelines, trend views, alerts, role-based insight",
       tech: "Data workflows, AI, analytics, cloud infrastructure",
+      tools: "Python notebooks, GitHub, data dashboards, monitoring",
       role: "Data strategy, solution architecture, product delivery and enablement",
       outcome:
         "Faster access to useful context and more consistent planning conversations.",
@@ -310,17 +365,19 @@ if (projectModal) {
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85",
       ],
     },
-    4: {
+    commerce: {
       title: "Northstar Commerce",
       category: "COMMERCE / 2023",
       overview:
         "A flexible commerce experience designed to make discovery, purchase and fulfilment feel effortless.",
+      objective: "Build a commerce journey that converts clearly today and adapts quickly tomorrow.",
       challenge:
         "The existing customer journey was difficult to navigate and could not adapt quickly to new offers.",
       solution:
         "We redesigned the experience around customer intent and built a modular platform for faster iteration.",
       features: "Product discovery, checkout, content management, reporting",
       tech: "Web development, APIs, responsive design, automation",
+      tools: "Figma, GitHub, content management, performance testing",
       role: "UX, product design, frontend engineering and delivery",
       outcome:
         "A clearer path to purchase and a stronger foundation for future growth.",
@@ -331,48 +388,52 @@ if (projectModal) {
         "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=85",
       ],
     },
-    5: {
-      title: "Fleetwise Control",
-      category: "LOGISTICS / 2023",
-      overview:
-        "A live planning and control view that brings vehicles, teams and delivery priorities together.",
-      challenge:
-        "Planning depended on delayed updates and multiple tools that did not share the same picture.",
-      solution:
-        "We connected operational data into a focused control centre with clear status, ownership and exception handling.",
-      features: "Live status, planning, exceptions, mobile access",
-      tech: "Cloud services, APIs, dashboards, mobile-first UI",
-      role: "Discovery, architecture, engineering, rollout support",
-      outcome:
-        "Quicker response to exceptions and a shared view across the operation.",
-      year: "2023",
-      duration: "10 months",
-      images: [
-        "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=85",
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=85",
-      ],
-    },
-    6: {
-      title: "CloudBase Modernisation",
-      category: "CLOUD / 2022",
-      overview:
-        "A safer, more observable cloud foundation for a growing digital service.",
-      challenge:
-        "Legacy infrastructure limited release confidence and made system health difficult to understand.",
-      solution:
-        "We introduced a staged cloud architecture, deployment automation, access controls and meaningful monitoring.",
-      features: "CI/CD, observability, backups, access management",
-      tech: "Cloud architecture, containers, infrastructure as code, monitoring",
-      role: "Assessment, cloud strategy, DevOps implementation and team coaching",
-      outcome:
-        "More predictable releases, clearer system health and a foundation ready to scale.",
-      year: "2022",
-      duration: "5 months",
-      images: [
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=85",
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85",
-      ],
-    },
+    // fleet: {
+    //   title: "Fleetwise Control",
+    //   category: "LOGISTICS / 2023",
+    //   overview:
+    //     "A live planning and control view that brings vehicles, teams and delivery priorities together.",
+    //   objective: "Create a shared operational picture for better planning and faster intervention.",
+    //   challenge:
+    //     "Planning depended on delayed updates and multiple tools that did not share the same picture.",
+    //   solution:
+    //     "We connected operational data into a focused control centre with clear status, ownership and exception handling.",
+    //   features: "Live status, planning, exceptions, mobile access",
+    //   tech: "Cloud services, APIs, dashboards, mobile-first UI",
+    //   tools: "Figma, GitHub, API testing, release monitoring",
+    //   role: "Discovery, architecture, engineering, rollout support",
+    //   outcome:
+    //     "Quicker response to exceptions and a shared view across the operation.",
+    //   year: "2023",
+    //   duration: "10 months",
+    //   images: [
+    //     "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=85",
+    //     "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=85",
+    //   ],
+    // },
+    // foundation: {
+    //   title: "CloudBase Modernisation",
+    //   category: "CLOUD / 2022",
+    //   overview:
+    //     "A safer, more observable cloud foundation for a growing digital service.",
+    //   objective: "Make the platform easier to release, understand and scale with confidence.",
+    //   challenge:
+    //     "Legacy infrastructure limited release confidence and made system health difficult to understand.",
+    //   solution:
+    //     "We introduced a staged cloud architecture, deployment automation, access controls and meaningful monitoring.",
+    //   features: "CI/CD, observability, backups, access management",
+    //   tech: "Cloud architecture, containers, infrastructure as code, monitoring",
+    //   tools: "GitHub Actions, Terraform, Docker, cloud observability",
+    //   role: "Assessment, cloud strategy, DevOps implementation and team coaching",
+    //   outcome:
+    //     "More predictable releases, clearer system health and a foundation ready to scale.",
+    //   year: "2022",
+    //   duration: "5 months",
+    //   images: [
+    //     "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=85",
+    //     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85",
+    //   ],
+    // },
   };
   const image = document.getElementById("projectModalImage");
   const dots = document.getElementById("projectDots");
@@ -382,6 +443,7 @@ if (projectModal) {
     activeImage =
       (index + activeProject.images.length) % activeProject.images.length;
     image.src = activeProject.images[activeImage];
+      image.alt = `${activeProject.title} project screenshot ${activeImage + 1}`;
     dots
       .querySelectorAll("button")
       .forEach((dot, dotIndex) =>
@@ -396,9 +458,11 @@ if (projectModal) {
         "Title",
         "Overview",
         "Challenge",
+        "Objective",
         "Solution",
         "Features",
         "Tech",
+        "Tools",
         "Role",
         "Outcome",
         "Year",
@@ -419,6 +483,7 @@ if (projectModal) {
           dot.addEventListener("click", () => setImage(index)),
         );
       setImage(0);
+      image.classList.toggle("project-poster-image", activeProject.poster);
       projectModal.classList.add("open");
       document.body.classList.add("modal-open");
     }),

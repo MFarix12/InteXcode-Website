@@ -105,11 +105,49 @@
           </div>
           <div class="portfolio-grid">
             <button
-              class="portfolio-card portfolio-card-featured reveal"
+              class="portfolio-card portfolio-card-featured portfolio-card-poster reveal"
+              type="button"
+              data-project="ecopilot"
+            >
+              <img
+                src="images/ecopilot-poster.png"
+                alt="EcoPilot FYP poster about eco-friendly purchasing"
+              /><span class="portfolio-category">SUSTAINABILITY / 2026</span>
+              <h3>EcoPilot</h3>
+              <p>
+                Encouraging eco-friendly purchasing through intelligent product
+                scanning.
+              </p>
+              <span class="portfolio-link"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span></button
+            ><button
+              type="button"
+              class="portfolio-card portfolio-card-featured portfolio-card-poster reveal"
+              data-project="eduClear"
+            >
+              <img
+                src="images/educlear-poster.png"
+                alt="EduClear student clearance management system poster"
+              /><span class="portfolio-category">EDUCATION / 2026</span>
+              <h3>EduClear</h3>
+              <p>
+                A web-based student clearance management system for faster, more
+                accurate academic clearance decisions.
+              </p>
+              <span class="portfolio-link"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span></button
+            >
+            <button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
               data-project="ops"
             >
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1100&amp;q=80"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Analytics dashboard on a laptop"
               /><span class="portfolio-category">OPERATIONS / 2025</span>
               <h3>Flowline Operations Hub</h3>
@@ -118,10 +156,14 @@
                 easier to act on.
               </p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></span></button
-            ><button class="portfolio-card reveal" data-project="care">
+            ><button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
+              data-project="care"
+            >
               <img
                 src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Healthcare professional using a tablet"
@@ -129,10 +171,14 @@
               <h3>CareConnect Portal</h3>
               <p>A secure digital front door for better service journeys.</p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></span></button
-            ><button class="portfolio-card reveal" data-project="insight">
+            ><button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
+              data-project="insight"
+            >
               <img
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Team collaborating around a screen"
@@ -140,10 +186,14 @@
               <h3>Signal Insights</h3>
               <p>Turning scattered data into confident business decisions.</p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></span></button
-            ><button class="portfolio-card reveal" data-project="commerce">
+            ><button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
+              data-project="commerce"
+            >
               <img
                 src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Online commerce experience on a phone"
@@ -151,10 +201,15 @@
               <h3>Northstar Commerce</h3>
               <p>A flexible customer experience built to grow with demand.</p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></span></button
-            ><button class="portfolio-card reveal" data-project="fleet">
+            >
+            <!-- <button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
+              data-project="fleet"
+            >
               <img
                 src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Warehouse and logistics operation"
@@ -164,10 +219,15 @@
                 Bringing people, vehicles and planning into one reliable view.
               </p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></span></button
-            ><button class="portfolio-card reveal" data-project="foundation">
+              ></span></button -->
+            >
+            <!-- <button
+              type="button"
+              class="portfolio-card reveal portfolio-card-featured"
+              data-project="foundation"
+            >
               <img
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
                 alt="Abstract cloud technology network"
@@ -175,10 +235,10 @@
               <h3>CloudBase Modernisation</h3>
               <p>A safer, more observable foundation for digital growth.</p>
               <span class="portfolio-link"
-                >View project
+                >View Details
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></span>
-            </button>
+            </button> -->
           </div>
         </div>
       </section>
@@ -227,6 +287,7 @@
         <button
           class="project-modal-close"
           id="projectModalClose"
+          type="button"
           aria-label="Close project details"
         >
           <i class="fa-solid fa-xmark"></i>
@@ -255,7 +316,11 @@
           </div>
           <div class="project-detail-grid">
             <div>
-              <span>OBJECTIVE / CHALLENGE</span>
+              <span>OBJECTIVE</span>
+              <p id="projectModalObjective"></p>
+            </div>
+            <div>
+              <span>PROBLEM / CHALLENGE</span>
               <p id="projectModalChallenge"></p>
             </div>
             <div>
@@ -267,8 +332,12 @@
               <p id="projectModalFeatures"></p>
             </div>
             <div>
-              <span>TECHNOLOGIES &amp; TOOLS</span>
+              <span>TECHNOLOGIES</span>
               <p id="projectModalTech"></p>
+            </div>
+            <div>
+              <span>DEVELOPMENT TOOLS</span>
+              <p id="projectModalTools"></p>
             </div>
             <div>
               <span>OUR ROLE</span>
