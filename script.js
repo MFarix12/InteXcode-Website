@@ -231,8 +231,8 @@ if (footerMount) {
             <div class="container">
                 <div class="footer-top">
                     <div class="footer-brand">
-                        <a href="${homeLink}" class="logo">Inte<span>X</span>core</a>
-                        <p>Intelligence. Technology. Core.<br>Practical technology for meaningful progress.</p>
+                        <a href="${homeLink}" class="logo">Inte<span>X</span>code</a>
+                        <p>Intelligence. Technology. Code.<br>Practical technology for meaningful progress.</p>
                     </div>
                     <div class="footer-contact-details">
                         <div><small>EMAIL</small><a href="mailto:intexcodetechnology@gmail.com">intexcodetechnology@gmail.com</a></div>
@@ -244,7 +244,7 @@ if (footerMount) {
                         <div><span>CONNECT</span><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div>
                     </div>
                 </div>
-                <div class="footer-bottom"><span>© <span id="year"></span> InteXcode. All rights reserved.</span><span>Intelligence · Technology · Core</span></div>
+                <div class="footer-bottom"><span>© <span id="year"></span> InteXcode. All rights reserved.</span><span>Intelligence · Technology · Code</span></div>
             </div>
         </footer>`;
     const footerYear = footerMount.querySelector("#year");

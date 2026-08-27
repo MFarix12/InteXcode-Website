@@ -1,7 +1,7 @@
 
 /* =========================================================
     INTEXCODE
-   Intelligence. Technology. Core.
+   Intelligence. Technology. Code.
 ========================================================= */
 
 :root {
@@ -743,7 +743,7 @@ h2 span,
     animation-duration: 12s;
 }
 
-.core-card {
+.code-card {
     position: relative;
     z-index: 3;
 
@@ -769,11 +769,11 @@ h2 span,
     transition: 0.5s ease;
 }
 
-.core-card:hover {
+.code-card:hover {
     transform: rotate(0deg) translateY(-10px);
 }
 
-.core-top {
+.code-top {
     display: flex;
     justify-content: space-between;
 
@@ -785,7 +785,7 @@ h2 span,
     letter-spacing: 2px;
 }
 
-.core-symbol {
+.code-symbol {
     position: relative;
 
     width: 160px;
@@ -805,7 +805,7 @@ h2 span,
     object-fit: contain;
 }
 
-.core-bottom {
+.code-bottom {
     display: flex;
     flex-direction: column;
 
@@ -819,7 +819,7 @@ h2 span,
     letter-spacing: 2px;
 }
 
-.core-bottom span:first-child {
+.code-bottom span:first-child {
     color: var(--yellow);
 }
 
@@ -2095,7 +2095,7 @@ h2 span,
         min-height: 400px;
     }
 
-    .core-card {
+    .code-card {
         width: 230px;
         height: 310px;
     }
