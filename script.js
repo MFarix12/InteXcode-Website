@@ -1,6 +1,6 @@
 
 /* =========================================================
-   INTEXCORE
+    INTEXCODE
    Interactive Website Scripts
 ========================================================= */
 
@@ -235,7 +235,7 @@ if (footerMount) {
                         <p>Intelligence. Technology. Core.<br>Practical technology for meaningful progress.</p>
                     </div>
                     <div class="footer-contact-details">
-                        <div><small>EMAIL</small><a href="mailto:intexcoretechnology@gmail.com">intexcoretechnology@gmail.com</a></div>
+                        <div><small>EMAIL</small><a href="mailto:intexcodetechnology@gmail.com">intexcodetechnology@gmail.com</a></div>
                         <div><small>PHONE</small><a href="tel:+60194248847">+60 19 424 8847</a></div>
                         <div><small>LOCATION</small><span>Malaysia · Serving clients worldwide</span></div>
                     </div>
@@ -244,7 +244,7 @@ if (footerMount) {
                         <div><span>CONNECT</span><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div>
                     </div>
                 </div>
-                <div class="footer-bottom"><span>© <span id="year"></span> InteXcore. All rights reserved.</span><span>Intelligence · Technology · Core</span></div>
+                <div class="footer-bottom"><span>© <span id="year"></span> InteXcode. All rights reserved.</span><span>Intelligence · Technology · Core</span></div>
             </div>
         </footer>`;
     const footerYear = footerMount.querySelector("#year");
@@ -288,7 +288,7 @@ if (projectModal) {
                 category: "OPERATIONS / 2025", 
                 overview: "A connected operations platform that gives teams one clear view of work, ownership and progress.", 
                 challenge: "Manual handoffs and disconnected spreadsheets made it difficult to see bottlenecks or act quickly.", 
-                solution: "InteXcore mapped the workflow, designed a role-based workspace and connected the existing business systems through secure APIs.", 
+                solution: "InteXcode mapped the workflow, designed a role-based workspace and connected the existing business systems through secure APIs.",
                 features: "Workflow tracking, approvals, alerts, dashboards", 
                 tech: "JavaScript, REST APIs, cloud hosting, CI/CD", 
                 role: "Discovery, UX, frontend, backend integration and quality assurance", 
@@ -314,7 +314,7 @@ if (projectModal) {
                 category: "INTELLIGENCE / 2024", 
                 overview: "A practical data and AI layer that helps leaders turn scattered information into confident decisions.", 
                 challenge: "Important signals were spread across reports, making it hard to spot trends early.", 
-                solution: "InteXcore unified the data flow and shaped an explainable insight experience around the decisions that mattered most.", 
+                solution: "InteXcode unified the data flow and shaped an explainable insight experience around the decisions that mattered most.",
                 features: "Data pipelines, trend views, alerts, role-based insight", 
                 tech: "Data workflows, AI, analytics, cloud infrastructure", 
                 role: "Data strategy, solution architecture, product delivery and enablement", 
@@ -447,7 +447,7 @@ const serviceData = {
         number: "01 / WEB DEVELOPMENT",
         title: "Web experiences built for <span>momentum.</span>",
         overview: "We design and develop fast, accessible web applications that make your business easier to discover, use and grow.",
-        help: "From a focused customer portal to a complete digital platform, InteXcore brings product thinking, engineering discipline and ongoing support together in one delivery team.",
+        help: "From a focused customer portal to a complete digital platform, InteXcode brings product thinking, engineering discipline and ongoing support together in one delivery team.",
         benefits: "Give customers a clearer digital experience, help teams work more efficiently and create a web foundation that can grow with demand.",
         capabilities: [["fa-layer-group", "Digital platforms", "Scalable websites and web applications shaped around real user journeys."], ["fa-gauge-high", "Performance first", "Clean, responsive experiences designed for speed and dependable growth."], ["fa-pen-ruler", "Product design", "Clear interfaces that turn complex workflows into confident actions."], ["fa-arrows-rotate", "Lifecycle support", "Continuous improvements, maintenance and technical guidance after launch."]],
         technologies: ["HTML / CSS", "JavaScript", "Responsive UI", "APIs", "Cloud hosting"]
@@ -456,7 +456,7 @@ const serviceData = {
         number: "02 / MOBILE APPLICATION DEVELOPMENT",
         title: "Mobile products people <span>keep using.</span>",
         overview: "We create intuitive mobile applications that connect customers, teams and services wherever work happens.",
-        help: "InteXcore helps you move from a validated idea to a reliable mobile product with thoughtful UX, maintainable engineering and a clear path for future releases.",
+        help: "InteXcode helps you move from a validated idea to a reliable mobile product with thoughtful UX, maintainable engineering and a clear path for future releases.",
         benefits: "Reach people in the moments that matter, improve engagement and put useful services directly into customers' hands.",
         capabilities: [["fa-mobile-screen-button", "Native experiences", "Mobile interfaces tailored to the habits and needs of your audience."], ["fa-code-branch", "Cross-platform delivery", "Efficient product development across the devices your customers use."], ["fa-lock", "Secure foundations", "Authentication, data protection and reliable integrations built in from the start."], ["fa-chart-line", "Product insight", "Analytics and feedback loops that guide useful, measurable improvements."]],
         technologies: ["iOS", "Android", "Cross-platform", "REST APIs", "Push notifications"]
@@ -465,7 +465,7 @@ const serviceData = {
         number: "03 / CLOUD & DEVOPS SOLUTIONS",
         title: "Infrastructure that <span>keeps pace.</span>",
         overview: "We build secure, observable cloud environments that help teams ship more often with less operational friction.",
-        help: "From cloud adoption to deployment automation, InteXcore turns infrastructure into a dependable foundation for your products and your people.",
+        help: "From cloud adoption to deployment automation, InteXcode turns infrastructure into a dependable foundation for your products and your people.",
         benefits: "Improve release speed, reduce operational risk and scale infrastructure in step with your business rather than ahead of it.",
         capabilities: [["fa-cloud-arrow-up", "Cloud adoption", "Practical migration and architecture decisions aligned with your business goals."], ["fa-gears", "Delivery automation", "Repeatable pipelines that make releases faster, safer and easier to roll back."], ["fa-chart-simple", "Observability", "Useful monitoring and alerts that make system health visible."], ["fa-shield-halved", "Resilience", "Backups, access controls and recovery planning for continuity."]],
         technologies: ["Cloud architecture", "CI/CD", "Containers", "Monitoring", "Infrastructure as code"]
@@ -474,7 +474,7 @@ const serviceData = {
         number: "04 / IT CONSULTING & STRATEGY",
         title: "A clearer route from <span>ambition to action.</span>",
         overview: "We help leaders make confident technology decisions, prioritize investment and turn business challenges into executable plans.",
-        help: "InteXcore brings an outside perspective grounded in delivery. We listen carefully, identify the highest-value opportunities and stay close enough to help make the plan real.",
+        help: "InteXcode brings an outside perspective grounded in delivery. We listen carefully, identify the highest-value opportunities and stay close enough to help make the plan real.",
         benefits: "Align teams around a practical direction, focus investment on measurable outcomes and make complex decisions easier to act on.",
         capabilities: [["fa-compass", "Technology roadmaps", "A prioritized, realistic plan for modernizing systems and capabilities."], ["fa-magnifying-glass-chart", "Discovery workshops", "Shared clarity around users, constraints, opportunities and outcomes."], ["fa-sitemap", "Architecture guidance", "Technology choices that balance speed, cost, security and scale."], ["fa-people-arrows", "Delivery alignment", "A practical bridge between business priorities and technical teams."]],
         technologies: ["Discovery", "Roadmapping", "Architecture", "Process design", "Delivery planning"]
@@ -483,7 +483,7 @@ const serviceData = {
         number: "05 / SOFTWARE TESTING & QUALITY ASSURANCE",
         title: "Quality engineered into <span>every release.</span>",
         overview: "We make software more dependable through purposeful testing, clear quality practices and earlier feedback.",
-        help: "InteXcore integrates quality into the full delivery lifecycle, helping your team release with greater confidence while reducing costly surprises in production.",
+        help: "InteXcode integrates quality into the full delivery lifecycle, helping your team release with greater confidence while reducing costly surprises in production.",
         benefits: "Protect customer trust, reduce rework and release with confidence through earlier, clearer insight into product quality.",
         capabilities: [["fa-list-check", "Test strategy", "Risk-based coverage designed around your product and release goals."], ["fa-bug-slash", "Defect prevention", "Early validation that catches issues before they become expensive."], ["fa-vial-circle-check", "Automation", "Repeatable checks for the workflows that matter most."], ["fa-user-check", "User confidence", "Accessible, usable experiences that work for the people relying on them."]],
         technologies: ["Functional testing", "API testing", "Regression", "Automation", "Quality reporting"]
@@ -492,7 +492,7 @@ const serviceData = {
         number: "06 / ARTIFICIAL INTELLIGENCE",
         title: "Intelligence with a <span>business purpose.</span>",
         overview: "We turn data and automation opportunities into practical AI solutions that improve decisions, productivity and customer experiences.",
-        help: "InteXcore helps you identify where intelligent systems can create real value, then designs a responsible path from experiment to useful, measurable capability.",
+        help: "InteXcode helps you identify where intelligent systems can create real value, then designs a responsible path from experiment to useful, measurable capability.",
         benefits: "Unlock useful insight, give people time back from repetitive work and create smarter experiences without losing sight of responsibility.",
         capabilities: [["fa-wand-magic-sparkles", "Applied AI", "Solutions focused on a clear business outcome rather than novelty."], ["fa-robot", "Intelligent automation", "Reduce repetitive work and give teams more time for high-value decisions."], ["fa-database", "Data foundations", "Organized, usable data that supports trustworthy insights."], ["fa-scale-balanced", "Responsible delivery", "Transparent, considered systems designed with security and people in mind."]],
         technologies: ["Machine learning", "Data workflows", "Automation", "Analytics", "AI strategy"]
@@ -504,7 +504,7 @@ const serviceKey = new URLSearchParams(window.location.search).get("service");
 const selectedService = serviceData[serviceKey] || serviceData["web-development"];
 
 if (serviceTitle) {
-    document.title = `${selectedService.number.split(" / ")[1]} | InteXcore`;
+    document.title = `${selectedService.number.split(" / ")[1]} | InteXcode`;
     document.getElementById("serviceNumber").textContent = selectedService.number;
     serviceTitle.innerHTML = selectedService.title;
     document.getElementById("serviceOverview").textContent = selectedService.overview;
