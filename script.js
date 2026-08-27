@@ -229,14 +229,6 @@ if (footerMount) {
     footerMount.innerHTML = `
         <footer class="footer">
             <div class="container">
-                <div class="footer-contact">
-                    <div class="footer-contact-copy">
-                        <span class="section-number">LET'S BUILD WHAT'S NEXT</span>
-                        <h2>Have a challenge<br><span>in mind?</span></h2>
-                        <p>Tell us where you want to go. We will bring the clarity, capability and care to help you get there.</p>
-                    </div>
-                    <a class="btn btn-primary footer-cta" href="${contactLink}">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
                 <div class="footer-top">
                     <div class="footer-brand">
                         <a href="${homeLink}" class="logo">Inte<span>X</span>core</a>

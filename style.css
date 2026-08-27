@@ -798,28 +798,11 @@ h2 span,
     justify-content: center;
 }
 
-.symbol-ring {
-    position: absolute;
-
-    inset: 0;
-
-    border: 1px solid var(--yellow);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 50px rgba(255,212,0,0.18);
-}
-
-.symbol-x {
-    font-family: var(--font-heading);
-
-    font-size: 100px;
-    font-weight: 700;
-
-    color: var(--yellow);
-
-    line-height: 1;
+.symbol-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .core-bottom {
