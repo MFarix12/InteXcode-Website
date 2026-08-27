@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact InteXcode for practical technology, digital products and intelligent solutions."
+    />
+    <title>Contact Us | InteXcode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="contact-page">
+    <header class="navbar scrolled" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html#home" class="logo">Inte<span>X</span>code</a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+              Services <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="services-dropdown" aria-label="Services submenu">
+              <a href="service.html?service=web-development"><i class="fa-solid fa-laptop-code"></i><span>Web Development</span></a>
+              <a href="service.html?service=mobile-application-development"><i class="fa-solid fa-mobile-screen-button"></i><span>Mobile Application Development</span></a>
+              <a href="service.html?service=cloud-devops-solutions"><i class="fa-solid fa-cloud"></i><span>Cloud &amp; DevOps Solutions</span></a>
+              <a href="service.html?service=it-consulting-strategy"><i class="fa-solid fa-compass-drafting"></i><span>IT Consulting &amp; Strategy</span></a>
+              <a href="service.html?service=software-testing-quality-assurance"><i class="fa-solid fa-shield-halved"></i><span>Software Testing &amp; Quality Assurance</span></a>
+              <a href="service.html?service=artificial-intelligence"><i class="fa-solid fa-brain"></i><span>Artificial Intelligence</span></a>
+            </div>
+          </div>
+          <a href="solutions.html" class="nav-link">Solutions</a>
+          <a href="vision.html" class="nav-link">Vision</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+        <a href="contact.html" class="nav-button">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="hero-grid"></div>
+        <div class="container page-hero-content reveal">
+          <span class="eyebrow"><span></span>LET'S WORK TOGETHER</span>
+          <h1>Start a<br /><strong>conversation.</strong></h1>
+          <p>Tell us what you are building, improving or figuring out. We will bring clear thinking and practical technology to the table.</p>
+        </div>
+        <div class="page-hero-code">06 / CONTACT</div>
+      </section>
+
+      <section class="section contact-page-section">
+        <div class="container contact-page-grid">
+          <div class="contact-page-intro reveal">
+            <span class="section-number">01 / GET IN TOUCH</span>
+            <h2>Good questions<br /><span>start here.</span></h2>
+            <p>Whether you need a new digital product, a stronger technical foundation or a thoughtful second opinion, InteXcode is ready to listen.</p>
+            <div class="contact-page-details">
+              <div class="contact-page-detail">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div><small>EMAIL</small><a href="mailto:intexcodetechnology@gmail.com">intexcodetechnology@gmail.com</a></div>
+              </div>
+              <div class="contact-page-detail">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div><small>PHONE</small><a href="tel:+60194248847">+60 19 424 8847</a></div>
+              </div>
+              <div class="contact-page-detail">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div><small>LOCATION</small><span>Malaysia · Serving clients worldwide</span></div>
+              </div>
+              <div class="contact-page-detail">
+                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                <div><small>BUSINESS HOURS</small><span>Monday–Friday · 9:00 AM–5:00 PM (MYT)</span></div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <span>FOLLOW ALONG</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="InteXcode on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="InteXcode on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="InteXcode on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form contact-page-form reveal" id="contactForm">
+            <span class="form-kicker">SEND A MESSAGE</span>
+            <h3>Let’s make the<br /><span>next step clear.</span></h3>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required /></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="phone">Phone number</label><input type="tel" id="phone" placeholder="+60" /></div>
+              <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="How can we help?" /></div>
+            </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" rows="6" placeholder="Tell us about your project" required></textarea></div>
+            <button type="submit" class="btn btn-primary form-button">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact-location">
+        <div class="container contact-location-grid">
+          <div class="reveal"><span class="section-number">02 / FIND US</span><h2>Rooted in<br /><span>Malaysia.</span></h2><p>We work with teams locally and worldwide. Explore our home base and get in touch before your visit.</p></div>
+          <div class="contact-map reveal"><iframe title="Map showing Malaysia" src="https://www.openstreetmap.org/export/embed.html?bbox=101.55%2C3.00%2C101.85%2C3.30&amp;layer=mapnik&amp;marker=3.139%2C101.6869" loading="lazy"></iframe><a href="https://www.openstreetmap.org/?mlat=3.139&amp;mlon=101.6869#map=11/3.139/101.6869" target="_blank" rel="noopener">Open map <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -187,7 +187,7 @@ if (footerMount) {
   const servicesLink = isHome ? "#services" : "index.html#services";
   const solutionsLink = isHome ? "solutions.html" : "solutions.html";
   const visionLink = isHome ? "vision.html" : "vision.html";
-  const contactLink = isHome ? "#contact" : "index.html#contact";
+  const contactLink = "contact.html";
 
   footerMount.innerHTML = `
         <footer class="footer">
@@ -512,6 +512,72 @@ if (projectModal) {
       setImage(activeImage + 1);
   });
 }
+
+/* =========================================================
+   HOME HERO CAROUSEL
+========================================================= */
+
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const slides = [...carousel.querySelectorAll("[data-slide]")];
+  const dots = [...carousel.querySelectorAll("[data-carousel-dot]")];
+  const previous = carousel.querySelector("[data-carousel-previous]");
+  const next = carousel.querySelector("[data-carousel-next]");
+  let activeSlide = 0;
+  let autoPlay;
+  let hasInteracted = false;
+
+  const showSlide = (index) => {
+    activeSlide = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === activeSlide;
+      slide.classList.toggle("is-active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
+    });
+    dots.forEach((dot, dotIndex) => {
+      const isActive = dotIndex === activeSlide;
+      dot.classList.toggle("is-active", isActive);
+      dot.setAttribute("aria-selected", String(isActive));
+    });
+  };
+
+  const stopAutoPlay = () => {
+    window.clearInterval(autoPlay);
+    autoPlay = undefined;
+  };
+
+  const startAutoPlay = () => {
+    if (!hasInteracted) {
+      stopAutoPlay();
+      autoPlay = window.setInterval(() => showSlide(activeSlide + 1), 5500);
+    }
+  };
+
+  const interact = () => {
+    hasInteracted = true;
+    stopAutoPlay();
+  };
+
+  previous.addEventListener("click", () => {
+    interact();
+    showSlide(activeSlide - 1);
+  });
+  next.addEventListener("click", () => {
+    interact();
+    showSlide(activeSlide + 1);
+  });
+  dots.forEach((dot, index) =>
+    dot.addEventListener("click", () => {
+      interact();
+      showSlide(index);
+    }),
+  );
+  carousel.addEventListener("mouseenter", stopAutoPlay);
+  carousel.addEventListener("mouseleave", startAutoPlay);
+  carousel.addEventListener("focusin", stopAutoPlay);
+  carousel.addEventListener("focusout", startAutoPlay);
+  carousel.addEventListener("touchstart", interact, { passive: true });
+  startAutoPlay();
+});
 
 /* =========================================================
    HERO PARALLAX EFFECT
