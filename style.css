@@ -759,7 +759,9 @@ h2 span,
   opacity: 0;
   pointer-events: none;
   transform: scale(1.03);
-  transition: opacity 0.7s ease, transform 0.9s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.9s ease;
 }
 
 .hero-slide.is-active {
@@ -772,7 +774,11 @@ h2 span,
   position: absolute;
   inset: 0;
   content: "";
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.05) 20%, rgba(8, 8, 8, 0.92) 90%);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 8, 8, 0.05) 20%,
+    rgba(8, 8, 8, 0.92) 90%
+  );
 }
 
 .hero-slide img {

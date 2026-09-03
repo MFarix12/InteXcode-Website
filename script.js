@@ -263,8 +263,7 @@ if (projectModal) {
       tech: "Mobile application, barcode/product scanning, eco-score logic, cloud services",
       tools:
         "Firebase, Node.js, Cloudinary, GitHub, incremental prototyping and black-box testing",
-      role:
-        "FYP research, product design, mobile application development, prototyping and functional testing",
+      role: "FYP research, product design, mobile application development, prototyping and functional testing",
       outcome:
         "User acceptance testing achieved a 100% pass rate across 118 test cases, supporting more responsible consumption and waste reduction.",
       year: "2026",
@@ -287,8 +286,7 @@ if (projectModal) {
         "Automated clearance engine, clearance report generation, interactive dashboards, clearance auditing and student eligibility monitoring",
       tech: "Web application, academic information management, database workflows, dashboard visualisation",
       tools: "Visual Studio Code, MySQL, GitHub and PDF reporting",
-      role:
-        "FYP research, requirements analysis, system design, web development, dashboard implementation and testing",
+      role: "FYP research, requirements analysis, system design, web development, dashboard implementation and testing",
       outcome:
         "User acceptance testing achieved a 100% pass rate across 60 test cases, supporting faster clearance processing and more accurate graduation decisions.",
       year: "2025",
@@ -301,7 +299,8 @@ if (projectModal) {
       category: "OPERATIONS / 2025",
       overview:
         "A connected operations platform that gives teams one clear view of work, ownership and progress.",
-      objective: "Create one dependable operating view for teams managing fast-moving work.",
+      objective:
+        "Create one dependable operating view for teams managing fast-moving work.",
       challenge:
         "Manual handoffs and disconnected spreadsheets made it difficult to see bottlenecks or act quickly.",
       solution:
@@ -324,7 +323,8 @@ if (projectModal) {
       category: "HEALTHCARE / 2024",
       overview:
         "A secure digital front door that makes service journeys simpler for customers and support teams.",
-      objective: "Make essential healthcare service journeys easier to start, follow and complete.",
+      objective:
+        "Make essential healthcare service journeys easier to start, follow and complete.",
       challenge:
         "Customers needed a clearer way to find information, submit requests and understand what happened next.",
       solution:
@@ -347,7 +347,8 @@ if (projectModal) {
       category: "INTELLIGENCE / 2024",
       overview:
         "A practical data and AI layer that helps leaders turn scattered information into confident decisions.",
-      objective: "Give decision-makers timely, understandable signals they can act on.",
+      objective:
+        "Give decision-makers timely, understandable signals they can act on.",
       challenge:
         "Important signals were spread across reports, making it hard to spot trends early.",
       solution:
@@ -370,7 +371,8 @@ if (projectModal) {
       category: "COMMERCE / 2023",
       overview:
         "A flexible commerce experience designed to make discovery, purchase and fulfilment feel effortless.",
-      objective: "Build a commerce journey that converts clearly today and adapts quickly tomorrow.",
+      objective:
+        "Build a commerce journey that converts clearly today and adapts quickly tomorrow.",
       challenge:
         "The existing customer journey was difficult to navigate and could not adapt quickly to new offers.",
       solution:
@@ -443,7 +445,7 @@ if (projectModal) {
     activeImage =
       (index + activeProject.images.length) % activeProject.images.length;
     image.src = activeProject.images[activeImage];
-      image.alt = `${activeProject.title} project screenshot ${activeImage + 1}`;
+    image.alt = `${activeProject.title} project screenshot ${activeImage + 1}`;
     dots
       .querySelectorAll("button")
       .forEach((dot, dotIndex) =>
